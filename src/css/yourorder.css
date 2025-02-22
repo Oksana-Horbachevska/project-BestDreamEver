@@ -1,1 +1,133 @@
+.page-yourorder {
+  background-color: #576f35;
+  padding: 100px;
+}
+.yororder-title {
+  font-family: Inter Tight;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -1.5%;
 
+  color: #fbfbfb;
+  margin-bottom: 24px;
+}
+.yororder-p {
+  font-family: Inter Tight;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #fbfbfb;
+  width: 742;
+  height: 40;
+}
+.yororder-text {
+  width: 751;
+  height: 192;
+  gap: 24px;
+  margin-bottom: 52px;
+}
+.yourorder-form {
+  display: flex;
+  gap: 32px;
+}
+
+.form {
+  background: #fbfbfb;
+  flex-basis: calc((100% - 32px) / 2);
+  padding-top: 52px;
+  padding-right: 48px;
+  padding-bottom: 52px;
+  padding-left: 48px;
+  gap: 10px;
+  border-radius: 30px;
+}
+.yororder-form-title {
+  font-family: Inter Tight;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -1.5%;
+  padding-bottom: 52px;
+  text-transform: uppercase;
+}
+.form-label {
+  display: flex;
+  align-self: flex-start;
+}
+.form-input {
+  width: 428;
+  gap: 10px;
+  border-radius: 30px;
+  padding-top: 16px;
+  padding-right: 376px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  border-width: 1px;
+  border: 1px solid #858585;
+}
+.form-label {
+  margin-bottom: 16px;
+}
+.form-textarea {
+  width: 428;
+  height: 96;
+  gap: 10px;
+  border-radius: 15px;
+  padding-top: 16px;
+  padding-right: 345px;
+  padding-bottom: 59px;
+  padding-left: 16px;
+  border-width: 1px;
+}
+button {
+  background: #7a3145;
+  width: 428;
+  height: 52;
+  gap: 10px;
+  border: none;
+  border-radius: 30px;
+  padding-top: 16px;
+  padding-right: 191px;
+  padding-bottom: 16px;
+  padding-left: 191px;
+  font-family: Inter Tight;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -1.5%;
+  color: #fbfbfb;
+  margin-top: 24px;
+}
+.yororder-img {
+  gap: 80px;
+  border-radius: 30px;
+  padding-top: 52px;
+  padding-right: 48px;
+  padding-bottom: 52px;
+  padding-left: 48px;
+  background: #7a3145;
+  color: #fbfbfb;
+  flex-basis: calc((100% - 32px) / 2);
+}
+.yourorder-social {
+  color: #d4bfc4;
+  font-family: Inter Tight;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+.social-links {
+  display: inline;
+}
+.social-links a {
+  text-decoration: none;
+  color: #fbfbfb; /* колір тексту */
+}
+.social-links a:not(:last-child)::after {
+  content: ' / ';
+  margin-right: 5px; /* Відступ між посиланнями */
+  color: #fbfbfb;
+}
