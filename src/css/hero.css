@@ -1,0 +1,132 @@
+
+.page-hero {
+min-width: 375px;
+}
+@media screen and (min-width: 768px) {
+.page-hero {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: auto;
+width: 100%;
+}    
+}
+
+@media screen and (min-width: 1280px) {
+.page-hero {
+flex-direction:inherit;
+justify-content: space-between;
+height: 796px;
+} }
+
+.hero-container {
+background-color: #576f35;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+gap: 20px;
+padding-top: 100px;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+.hero-container {
+gap: 24px;
+padding-top: 120px;
+padding-left: 32px;
+padding-right: 32px;
+padding-bottom: 52px;
+} 
+}
+@media screen and (min-width: 1280px) { 
+.hero-container {
+width: 50%;
+height: 796px;
+gap: 0;
+padding-top: 232px;
+padding-left: 100px;
+padding-right: 38px;
+padding-bottom: 52px;
+}
+}
+.hero-title {
+font-weight: 600;
+font-size: 52px;
+line-height: 1;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: #fbfbfb;
+}
+@media screen and (min-width: 768px) {
+.hero-title {
+font-size: 76px;}
+}
+@media screen and (min-width: 1280px) {
+.hero-title {
+font-size: 76px;}
+}
+.hero-text {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.43;
+color: #fbfbfb;}
+
+@media screen and (min-width: 768px) {
+.hero-text {
+padding-right: 101px;
+font-size: 16px;
+line-height: 1.25;
+}
+}
+
+@media screen and (min-width: 1280px) {
+.hero-text {
+padding-right: 32px;
+font-size: 16px;
+line-height: 1.25; 
+}}
+
+.hero-container-img {
+margin-right: 0;
+height: 372px;
+background-color: #576f35;
+display: flex;
+justify-content: center;
+text-align: center;
+background-image: linear-gradient(
+to bottom,
+ rgba(20, 20, 20, 0.2),
+ rgba(20, 20, 20, 0.2)
+ ),
+url(../img/hero-img/image-min.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+.hero-container-img {
+width: 100%;
+height: 536px;
+background-image: linear-gradient(
+to bottom,
+rgba(20, 20, 20, 0.2),
+rgba(20, 20, 20, 0.2)
+ ),
+ url(../img/hero-img/image-min.jpg);
+}
+}
+
+@media screen and (min-width: 1280px) {
+.hero-container-img {
+width: 50%;
+height: 796px;
+background-image: linear-gradient(
+to bottom,
+rgba(20, 20, 20, 0.2),
+rgba(20, 20, 20, 0.2)
+ ),
+ url(/img/hero-img/image-min.jpg);
+}
+}
