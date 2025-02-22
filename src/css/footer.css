@@ -1,11 +1,17 @@
 .footer {
+  /*padding: 40px 0;
+  background-color: #7a3145;*/
 }
 
 .footer-container {
-  min-width: 375px;
+  min-width: 320px;
   /*max-width: 375px;*/
+  /*width: calc(100% - 375px);*/
+  /*max-width: 1280px;*/
+  max-width: 100%;
+  margin: 0 auto;
   padding: 40px 20px;
-  background-color: #7a3145;
+  /*background-color: #7a3145;*/
 }
 .footer-svg-list {
   fill: white;
@@ -93,6 +99,7 @@
     max-width: 1280px;
     height: 476px;
     padding: 32px 32px 32px 32px;
+    background-color: #7a3145;
   }
   .footer-svg-menu-adress {
     display: flex;
