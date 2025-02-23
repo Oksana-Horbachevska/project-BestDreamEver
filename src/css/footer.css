@@ -1,12 +1,14 @@
 .footer {
-}
-
-.footer-container {
-  min-width: 375px;
-  /*max-width: 375px;*/
-  padding: 40px 20px;
+  padding: 40px 0;
   background-color: #7a3145;
 }
+
+/*.footer-container {
+  min-width: 375px;
+  /*max-width: 375px;*/
+/*padding: 40px 20px;
+  background-color: #7a3145;
+}*/
 .footer-svg-list {
   fill: white;
   margin-top: 0;
