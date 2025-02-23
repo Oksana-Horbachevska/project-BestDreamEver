@@ -91,11 +91,11 @@
 }
 /*--------------------------tablet--------*/
 @media screen and (min-width: 768px) {
-  .footer-container {
+  /*footer-container {
     max-width: 1280px;
     height: 476px;
     padding: 32px 32px 32px 32px;
-  }
+  }*/
   .footer-svg-menu-adress {
     display: flex;
     flex-direction: row;
@@ -170,11 +170,11 @@
 }
 /*-------------------------------------------PK*/
 @media screen and (min-width: 1280px) {
-  .footer-container {
+  /*.footer-container {
     max-width: 2660px;
     height: 392px;
     padding: 52px 100px 52px 100px;
-  }
+  }*/
   .footer-list-text {
     display: flex;
     flex-direction: column;
