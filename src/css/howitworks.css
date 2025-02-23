@@ -1,0 +1,143 @@
+.how {
+    background-image: linear-gradient(to bottom, #7a3145 0% 50%, #576f35 50% 100%);
+    padding: 100px;
+}
+
+.container-how {
+display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+.girl_cut {
+    border-radius: 30px;
+    max-width: 335px;
+    
+}
+
+.order-list {
+    list-style: none;
+    padding: 0;
+    counter-reset: list;
+}
+
+.text-section {
+display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.title-how {
+    width: 440px;
+        height: 96px;
+font-weight: 600;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    margin-bottom: 24px;
+}
+
+.highlight {
+    color: #d4bfc4;
+}
+
+.text-how {
+    width: 440px;
+        height: 60px;
+font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #fbfbfb;
+    margin-bottom: 104px;
+}
+
+.custom-list {
+    list-style: none;
+    padding: 0;
+    margin: 0%;
+    counter-reset: list;
+}
+
+
+.custom-item {
+    width: 440px;
+        height: 76px;
+    display: flex;
+    align-items: flex-start;
+    background: #fbfbfb;
+    padding: 12px 25px 12px 24px;
+    margin-bottom: 24px;
+    border-radius: 15px;
+    color: #858585;
+    font-size: 16px;
+    position: relative;
+}
+
+
+.another {
+font-weight: 700;
+    color: #141414;
+}
+
+.circle-item {
+display: flex;
+}
+
+.circle-text {
+    
+    font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        color: #858585;
+        padding: 6px 0px 6px 24px;
+}
+
+.circle {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fbfbfb;
+    font-size: 16px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #7a3145 50%, #7a3145 100%);
+    border: 3px solid #d4bfc4;
+  
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .girl_cut {
+        max-width: 640px;
+        
+    }
+
+        .title-how {
+            width: 440px;
+            height: 96px;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 1;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            color: #fbfbfb;
+            margin-bottom: 24px;
+        }
+}
+
+@media screen and (min-width: 1280px) {
+.how {
+        background-image: linear-gradient(to right, #7a3145 0% 50%, #576f35 50% 100%);
+        padding: 100px;
+    }
+
+    .girl_cut {
+    max-width: 440px;
+        
+    }
+}
