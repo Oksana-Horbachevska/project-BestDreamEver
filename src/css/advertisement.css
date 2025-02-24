@@ -1,4 +1,69 @@
 .advertisement {
   padding: 80px 20px;
-  background-color: blue;
+  background: #fbfbfb;
+  margin-top: 14px;
+}
+.text {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+  display: inline-block;
+}
+
+.text-discount {
+  color: #fbfbfb;
+  display: inline-block;
+  background-color: #576f35;
+  border-radius: 12px;
+  position: relative;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 100px 32px;
+  }
+  .text {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+  }
+
+  .text-discount {
+    color: #fbfbfb;
+    display: block;
+    background-color: #576f35;
+    border-radius: 12px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-left: 0;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 100px 100px;
+  }
+  .text {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+  }
+}
+.text-discount {
+  background-color: #556b2f;
+  color: #fbfbfb;
+  padding: 5px 10px;
+  display: inline-block;
+  position: relative;
 }
