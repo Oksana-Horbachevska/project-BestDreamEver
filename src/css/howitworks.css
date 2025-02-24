@@ -1,0 +1,158 @@
+.how {
+    background-image: linear-gradient(to bottom, #7a3145 0% 45%, #576f35 45% 100%);
+    padding: 100px;
+}
+
+.container-how {
+display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.girl_cut {
+    border-radius: 30px;
+    max-width: 335px;
+    max-height: 452px;
+    
+}
+
+.order-list {
+    list-style: none;
+    padding: 0;
+    counter-reset: list;
+}
+
+.text-section {
+display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.title-how {
+   max-width: 335px;
+font-weight: 600;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    margin-bottom: 24px;
+ margin-top: 120px;
+}
+
+.highlight {
+    color: #d4bfc4;
+}
+
+.text-how {
+    max-width: 335px;
+        max-height: 60px;
+font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #fbfbfb;
+    margin-bottom: 104px;
+}
+
+   .order-item {
+       list-style: none;
+       counter-reset: list-counter;
+       padding: 0;
+       margin: 0;
+   }
+
+   .order-list {
+       counter-increment: list-counter;
+       display: flex;
+       align-items: center;
+       margin-bottom: 24px;
+    background-color: #fbfbfb;
+       padding: 18px 15px 18px 24px;
+       border-radius: 15px;
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+        color: #858585;
+        max-width: 440px;
+        max-height: 76px;
+   }
+
+   .order-list::before {
+       content: counter(list-counter);
+       font-size: 18px;
+       font-weight: 600;
+       line-height: 40px;
+       text-align: center;
+       background-color: #7a3145;
+       color: #fbfbfb; 
+       border-radius: 100%;
+       margin-right: 24px;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid #d4bfc4; 
+        flex: 0 0 50px;
+   }
+
+   .order-text {
+display: inline-block;
+        max-width: calc(100% - 50px);
+        word-wrap: break-word;
+      
+   }
+
+   .another {
+       font-weight: 700;
+       color: #141414;
+   }
+
+@media screen and (min-width: 768px) {
+.container-how {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 200px;
+    }
+
+    .girl_cut {
+        max-width: 640px;
+        
+    }
+
+    
+        .title-how {
+            max-width:440px;
+            max-height: 96px;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 1;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+            color: #fbfbfb;
+            margin-bottom: 24px;
+            margin-top:0;
+        }
+
+                .text-how {
+                    max-width: 440px;
+                    max-height: 60px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.25;
+                    color: #fbfbfb;
+                    margin-bottom: 104px;
+                }
+    }
+
+@media screen and (min-width: 1280px) {
+.how {
+        background-image: linear-gradient(to right, #7a3145 0% 50%, #576f35 50% 100%);
+        padding: 100px;
+    }
+
+    .girl_cut {
+    max-width: 440px;
+    max-height: 560px;
+        
+    }
+}
