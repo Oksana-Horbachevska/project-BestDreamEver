@@ -1,20 +1,23 @@
-.reviews-section {
-    padding: 80px 0;
+.reviews {
+    padding: 80px 20px;
 }
 
-.reviews-title-wrapper {
+.title-box {
     margin-bottom: 40px;
+    max-width: 335px;
 }
 
 .reviews-title {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 1.08;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #141414;
     margin-bottom: 20px;
+    font-size: 47px;
+    line-height: 1.08333;
+    color: #141414;
+}
+
+@media screen and (min-width: 375px) {
+    .reviews-title {
+        font-size: 48px;
+    }
 }
 
 .reviews-title-span {
@@ -22,75 +25,62 @@
 }
 
 .reviews-text {
+    line-height: 1.42857;
+    color: #141414;
     font-size: 14px;
-    line-height: 1.43;
 }
 
-.reviews-item-icon {
+.reviews-item {
     display: block;
-    margin: 0 auto 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #d4bfc4;
+    border-radius: 24px;
 }
 
-.reviews-item-title {
+.hide {
+    display: none;
+}
+
+.reviews-img {
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.reviews-list-title {
     font-weight: 600;
     font-size: 18px;
-    line-height: 1.11;
+    line-height: 1.11111;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     text-align: center;
-
+    color: #141414;
     margin-bottom: 8px;
 }
 
-.reviews-item-text {
+.reviews-list-text {
     font-size: 14px;
-    line-height: 1.43;
+    line-height: 1.42857;
     text-align: center;
     color: #858585;
-
-    padding: 0 7px;
 }
 
-.list-people-john {
-    border: 1px solid #d4bfc4;
-    border-radius: 24px;
-    padding: 19px 15px;
-    height: 248px;
-}
-
-.list-icon {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 72px;
-    max-width: 100%;
-}
-
-.list-people-ihor {
-    display: none;
-}
-
-.list-people-vika {
-    display: none;
-}
-
-
-@media only screen and (min-width: 768px) {
-    .reviews-section {
-        padding: 100px 0;
+@media screen and (min-width: 768px) {
+    .reviews {
+        padding: 100px 32px;
     }
 
-    .reviews-title-wrapper {
-        max-width: 553px;
+    .title-box {
         margin-bottom: 52px;
+        max-width: 553px;
     }
 
     .reviews-title {
-        font-size: 64px;
-        line-height: 1;
-
         margin-bottom: 24px;
+        font-size: 64px;
     }
 
     .reviews-text {
@@ -98,52 +88,39 @@
         line-height: 1.25;
     }
 
-    .list-people-vika {
-        display: inline;
-        border: 1px solid #d4bfc4;
-        border-radius: 24px;
-        padding: 19px 15px;
-        height: 248px;
-    }
-
-    .list-icon {
+    .reviews-list {
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 72px;
-        max-width: 100%;
+        gap: 24px;
     }
 
-    .reviews-list-item-tab {
+    .reviews-item {
+        width: calc((100% - 24px) / 2);
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+
+    .hide:not(:last-child) {
         display: block;
     }
 
-    .reviews-item-text {
+    .reviews-list-text {
         font-size: 16px;
         line-height: 1.25;
     }
 }
 
 @media only screen and (min-width: 1280px) {
-    .reviews-list-item-desk {
+    .reviews {
+        padding: 100px;
+    }
+
+    .reviews-item {
+        width: calc((100% - 24px) / 3);
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+    .hide {
         display: block;
-    }
-
-    .list-people-ihor {
-        border: 1px solid #d4bfc4;
-        border-radius: 24px;
-        padding: 19px 15px;
-        height: 248px;
-        display: inline;
-    }
-
-    .list-icon {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap: 72px;
-        max-width: 100%;
     }
 }
