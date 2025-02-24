@@ -1,1 +1,149 @@
+.reviews-section {
+    padding: 80px 0;
+}
 
+.reviews-title-wrapper {
+    margin-bottom: 40px;
+}
+
+.reviews-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #141414;
+    margin-bottom: 20px;
+}
+
+.reviews-title-span {
+    color: #576f35;
+}
+
+.reviews-text {
+    font-size: 14px;
+    line-height: 1.43;
+}
+
+.reviews-item-icon {
+    display: block;
+    margin: 0 auto 24px;
+}
+
+.reviews-item-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 8px;
+}
+
+.reviews-item-text {
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: center;
+    color: #858585;
+
+    padding: 0 7px;
+}
+
+.list-people-john {
+    border: 1px solid #d4bfc4;
+    border-radius: 24px;
+    padding: 19px 15px;
+    height: 248px;
+}
+
+.list-icon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+    max-width: 100%;
+}
+
+.list-people-ihor {
+    display: none;
+}
+
+.list-people-vika {
+    display: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .reviews-section {
+        padding: 100px 0;
+    }
+
+    .reviews-title-wrapper {
+        max-width: 553px;
+        margin-bottom: 52px;
+    }
+
+    .reviews-title {
+        font-size: 64px;
+        line-height: 1;
+
+        margin-bottom: 24px;
+    }
+
+    .reviews-text {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .list-people-vika {
+        display: inline;
+        border: 1px solid #d4bfc4;
+        border-radius: 24px;
+        padding: 19px 15px;
+        height: 248px;
+    }
+
+    .list-icon {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 72px;
+        max-width: 100%;
+    }
+
+    .reviews-list-item-tab {
+        display: block;
+    }
+
+    .reviews-item-text {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .reviews-list-item-desk {
+        display: block;
+    }
+
+    .list-people-ihor {
+        border: 1px solid #d4bfc4;
+        border-radius: 24px;
+        padding: 19px 15px;
+        height: 248px;
+        display: inline;
+    }
+
+    .list-icon {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 72px;
+        max-width: 100%;
+    }
+}
