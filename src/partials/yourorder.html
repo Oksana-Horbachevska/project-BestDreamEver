@@ -12,6 +12,7 @@
     </p>
   </div>
 
+<div class="yororder-form-social">
   <div class="yourorder-form">
     <h3 class="yororder-form-title">
       Ordering <span style="color: #7a3145">from us</span> is quick and easy!
@@ -19,12 +20,13 @@
       contact you !
     </h3>
     <form class="form">
-      <label class="form-label" for="fullname">
+      <label class="form-label" for="fullname" >
         <input
           class="form-input"
           type="text"
           name="fullname"
           placeholder="Full Name"
+          autofocus
         />
       </label>
       <label class="form-label" for="email">
@@ -33,6 +35,7 @@
           type="text"
           name="email"
           placeholder="Email"
+          autofocus
         />
       </label>
       <label class="form-label" for="comment">
@@ -41,20 +44,24 @@
           name="comment"
           placeholder="Comment"
           rows="5"
+          autofocus
         ></textarea>
       </label>
-      <button class="yororder-botton" type="button">SEND</button>
+      <button class="yororder-botton" type="button" >SEND</button>
     </form>
   </div>
     <div class="yororder-img-social">
-      <img
-        src="/img/yourorder/yourorder.jpg"
+      <picture> 
+        <source media="(min-width: 1280px)" srcset="
+        /img/yourorder/yourorder-desktop.jpg 2x" />
+        <source media="(min-width: 768px)" srcset="
+        /img/yourorder/yourorder-tablet.jpg 1x" />        
+      <img      
+      src="/img/yourorder/yourorder-mobile.jpg"
         alt="дівчинат робить смузі"
-        width="295"
-        height="272"
-        
         class="yororder-img"
       />
+    </picture>
       <p class="yourorder-social">Follow us on our social networks:</p>
       <ul>
         <li class="social-links">
@@ -76,4 +83,5 @@
     </div>
   </div>
   </div>
+</div>
 </section>

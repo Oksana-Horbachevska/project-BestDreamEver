@@ -23,30 +23,14 @@
   color: #fbfbfb;
 }
 .yororder-text {
-  gap: 24px;
-  margin-bottom: 52px;
-  max-width: 751px;
+  margin-bottom: 40px;
 }
-/* @media only screen and (min-width: 1280px) {
-  .yourorder-form {
-    display: flex;
-    gap: 32px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .yororder-img {
-    max-width: 640px;
-    max-height: 632px;
-  }
-  .form {
-    max-width: 640px;
-    max-height: 632px;
-  }
-} */
+
 .yourorder-form {
   padding: 40px 20px;
   background: #fbfbfb;
   border-radius: 30px;
+  margin-bottom: 20px;
 }
 
 .yororder-form-title {
@@ -59,7 +43,6 @@
 }
 .form-label {
   display: block;
-  margin-bottom: 16px;
 }
 .form-input {
   width: 100%;
@@ -71,17 +54,19 @@
   font-size: 14px;
   line-height: 1.43;
   color: #141414;
+  margin-bottom: 16px;
 }
 .form-textarea {
   width: 100%;
   height: 92px;
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 16px 14px;
   border: 1px solid #858585;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
   color: #141414;
+  margin-bottom: 20px;
 }
 .yororder-botton {
   display: block;
@@ -104,9 +89,9 @@
   color: #fbfbfb;
 }
 .yororder-img {
-  radius: 15px;
+  border-radius: 15px;
   margin-bottom: 20px;
-  background: #7a3145;
+  max-width: 295px;
 }
 .yourorder-social {
   color: #d4bfc4;
@@ -131,4 +116,51 @@
   content: ' / ';
   margin-right: 5px; /* Відступ між посиланнями */
   color: #fbfbfb;
+}
+@media only screen and (min-width: 768px) {
+  .page-yourorder {
+    padding: 100px 0;
+  }
+  .yororder-text {
+    margin-bottom: 52px;
+  }
+  .yourorder-form {
+    padding: 100px 72px;
+    margin-bottom: 32px;
+  }
+  .form-input {
+    height: 52px;
+    padding: 16px 15px;
+  }
+  .form-textarea {
+    height: 96px;
+    padding: 16px 15px;
+    margin-bottom: 24px;
+  }
+  .yororder-img-social {
+    padding: 52px;
+  }
+  .yourorder-img {
+    margin-bottom: 52px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .yororder-text {
+    max-width: 751px;
+    margin-bottom: 40px;
+  }
+  .yororder-text {
+    margin-bottom: 52px;
+  }
+  .yororder-form-social {
+    display: flex;
+    width: calc((100% - 32px) / 2);
+  }
+  .yourorder-form {
+    margin-right: 32px;
+    padding: 48px 52px;
+  }
+  .yourorder-img {
+    margin-bottom: 80px;
+  }
 }
