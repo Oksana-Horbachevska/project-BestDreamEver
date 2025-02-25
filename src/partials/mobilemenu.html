@@ -1,53 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mobile menu</title>
-
-    <link
-      rel="stylesheet"
-      href="/project-BestDreamEver/src/css/mobilemenu.css"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="mobile-menu is-open" data-menu>
-        <div class="container mobile-menu-container">
-          <button
-            class="button btn-mobile-menu-close"
-            type="button"
-            data-menu-close
-          >
-            <svg class="close-icon" width="20" height="20">
-              <use
-                href="/project-BestDreamEver/src/img/sprite.svg#icon-close"
-              ></use>
-            </svg>
-          </button>
-          <ul class="menu-list">
-            <li class="menu-item">
-              <div class="item-link">
-                <a class="menu-link" href="">How it works</a>
-              </div>
-            </li>
-            <li class="menu-item">
-              <div class="item-link">
-                <a class="menu-link" href="">Vegetables</a>
-              </div>
-            </li>
-            <li class="menu-item">
-              <div class="item-link">
-                <a class="menu-link" href="">Reviews</a>
-              </div>
-            </li>
-          </ul>
-          <button class="button order-btn" type="button">
-            <p class="order-btn-text">Shop now</p>
-          </button>
+<div class="mobile-menu is-open" data-menu>
+  <div class="container mobile-menu-container">
+    <button class="button btn-mobile-menu-close" type="button" data-menu-close>
+      <svg class="close-icon" width="20" height="20">
+        <use href="/project-BestDreamEver/src/img/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <ul class="menu-list">
+      <li class="menu-item">
+        <div class="item-link">
+          <a class="menu-link" href="">How it works</a>
         </div>
-      </div>
-    </header>
-    <script src="/project-BestDreamEver/src/js/menu.js"></script>
-  </body>
-</html>
+      </li>
+      <li class="menu-item">
+        <div class="item-link">
+          <a class="menu-link" href="">Vegetables</a>
+        </div>
+      </li>
+      <li class="menu-item">
+        <div class="item-link">
+          <a class="menu-link" href="">Reviews</a>
+        </div>
+      </li>
+    </ul>
+    <button class="button order-btn" type="button">Shop now</button>
+  </div>
+</div>
