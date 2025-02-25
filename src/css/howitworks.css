@@ -1,12 +1,14 @@
 .how {
-    background-image: linear-gradient(to bottom, #7a3145 0% 45%, #576f35 45% 100%);
-    padding: 100px;
+    background-image: linear-gradient(to bottom, #7a3145 0% 43%, #576f35 43% 100%);
 }
 
 .container-how {
 display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+}
+
+.photo-section {
+    padding: 40px 0;
 }
 
 .girl_cut {
@@ -27,18 +29,22 @@ display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
+    padding: 80px 0;
+}
+
+.how-text-wrapper {
+max-height: 676px;
+margin-bottom: 40px;
 }
 
 .title-how {
-   max-width: 335px;
 font-weight: 600;
     font-size: 28px;
     line-height: 1;
     letter-spacing: -0.01em;
     text-transform: uppercase;
     color: #fbfbfb;
-    margin-bottom: 24px;
- margin-top: 120px;
+    margin-bottom: 20px;
 }
 
 .highlight {
@@ -49,10 +55,9 @@ font-weight: 600;
     max-width: 335px;
         max-height: 60px;
 font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.25;
     color: #fbfbfb;
-    margin-bottom: 104px;
 }
 
    .order-item {
@@ -66,16 +71,19 @@ font-weight: 500;
        counter-increment: list-counter;
        display: flex;
        align-items: center;
-       margin-bottom: 24px;
     background-color: #fbfbfb;
-       padding: 18px 15px 18px 24px;
+       padding: 12px 27px 12px 24px;
        border-radius: 15px;
     font-weight: 500;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1.25;
         color: #858585;
-        max-width: 440px;
-        max-height: 76px;
+        max-height: 284px;
+        max-width: 335px;
+   }
+
+   .order-list:not(:last-child) {
+    margin-bottom: 20px;
    }
 
    .order-list::before {
@@ -97,7 +105,6 @@ font-weight: 500;
 
    .order-text {
 display: inline-block;
-        max-width: calc(100% - 50px);
         word-wrap: break-word;
       
    }
@@ -109,17 +116,30 @@ display: inline-block;
 
 @media screen and (min-width: 768px) {
 .container-how {
-        display: flex;
-        flex-wrap: wrap;
         gap: 200px;
     }
 
     .girl_cut {
         max-width: 640px;
-        
+        max-height: 640px;
     }
 
+    .photo-section {
+padding: 100px 164px;
+} 
+
+.text-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+padding: 0px 164px;
+}
     
+.order-list:not(:last-child) {
+    margin-bottom: 24px;
+}
+
         .title-how {
             max-width:440px;
             max-height: 96px;
@@ -130,7 +150,7 @@ display: inline-block;
             text-transform: uppercase;
             color: #fbfbfb;
             margin-bottom: 24px;
-            margin-top:0;
+                margin-top: 0;
         }
 
                 .text-how {
@@ -140,8 +160,24 @@ display: inline-block;
                     font-size: 16px;
                     line-height: 1.25;
                     color: #fbfbfb;
-                    margin-bottom: 104px;
+                    margin-bottom: 52px;
                 }
+
+                                .order-list {
+                                    counter-increment: list-counter;
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 24px;
+                                    background-color: #fbfbfb;
+                                    padding: 18px 15px 18px 24px;
+                                    border-radius: 15px;
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    line-height: 1.25;
+                                    color: #858585;
+                                    max-width: 440px;
+                                    max-height: 76px;
+                                }
     }
 
 @media screen and (min-width: 1280px) {
@@ -155,4 +191,30 @@ display: inline-block;
     max-height: 560px;
         
     }
+
+                .photo-section {
+                    padding: 40px 0;
+                }
+
+           .text-how {
+               max-width: 440px;
+               max-height: 60px;
+               font-weight: 500;
+               font-size: 16px;
+               line-height: 1.25;
+               color: #fbfbfb;
+              padding-bottom: 104px;
+           }
+
+.text-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 45px;
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+}
+           
 }
