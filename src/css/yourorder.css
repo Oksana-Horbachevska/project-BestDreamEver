@@ -56,7 +56,8 @@
   margin-bottom: 16px;
 }
 
-.form-input::placeholder {
+.form-input::placeholder,
+.form-textarea::placeholder {
   color: #141414;
 }
 
