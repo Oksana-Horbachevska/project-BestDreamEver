@@ -6,23 +6,22 @@
   display: flex;
   flex-direction: column;
 }
-.yororder-title {
+.yourorder-title {
   font-weight: 600;
   font-size: 64px;
   line-height: 64px;
   letter-spacing: -1.5%;
-
   color: #fbfbfb;
   margin-bottom: 24px;
 }
-.yororder-p {
+.yourorder-p {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0%;
   color: #fbfbfb;
 }
-.yororder-text {
+.yourorder-text {
   margin-bottom: 40px;
 }
 
@@ -33,7 +32,7 @@
   margin-bottom: 20px;
 }
 
-.yororder-form-title {
+.yourorder-form-title {
   font-weight: 600;
   font-size: 32px;
   line-height: 32px;
@@ -56,19 +55,20 @@
   color: #141414;
   margin-bottom: 16px;
 }
+
 .form-input:valid,
 .form-textarea:valid {
-  border: 1px solid #3cbc81; /* зелена рамка при валідних даних */
+  border: 1px solid #3cbc81;
 }
 
 .form-input:invalid,
 .form-textarea:invalid {
-  border: 1px solid red; /* червона рамка при невалідних даних */
+  border: 1px solid red;
 }
 
 .form-input:hover,
 .form-textarea:hover {
-  border: 1px solid #7a3145; /* рамка при наведенні курсору */
+  border: 1px solid #7a3145;
 }
 
 .form-textarea {
@@ -83,7 +83,7 @@
   color: #141414;
   margin-bottom: 20px;
 }
-.yororder-botton {
+.yourorder-button {
   display: block;
   background: #7a3145;
   width: 100%;
@@ -97,20 +97,19 @@
   letter-spacing: -1.5%;
   color: #fbfbfb;
 }
-.yororder-img-social {
+.yourorder-img-social {
   border-radius: 30px;
   padding: 40px 20px;
   background: #7a3145;
   color: #fbfbfb;
 }
-.yororder-img {
+.yourorder-img {
   border-radius: 15px;
   margin-bottom: 20px;
 }
 
 .yourorder-social {
   color: #d4bfc4;
-  font-family: Inter Tight;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -123,23 +122,15 @@
   text-transform: uppercase;
   text-align: end;
 }
-.social-links a {
-  text-decoration: none;
-  color: #fbfbfb; /* колір тексту */
-}
-.social-links a:not(:last-child)::after {
-  content: ' / ';
-  margin-right: 5px; /* Відступ між посиланнями */
-  color: #fbfbfb;
-}
+
 @media only screen and (min-width: 768px) {
   .page-yourorder {
     padding: 100px 0;
   }
-  .yororder-text {
+  .yourorder-text {
     margin-bottom: 52px;
   }
-  .yororder-form-title {
+  .yourorder-form-title {
     max-width: 440px;
   }
   .yourorder-form {
@@ -155,7 +146,8 @@
     padding: 16px 15px;
     margin-bottom: 24px;
   }
-  .yororder-img-social {
+
+  .yourorder-img-social {
     padding: 52px;
   }
   .yourorder-img {
@@ -163,24 +155,25 @@
   }
 }
 @media only screen and (min-width: 1280px) {
-  .yororder-text {
+  .yourorder-text {
     max-width: 751px;
     margin-bottom: 40px;
   }
-  .yororder-text {
+  .yourorder-text {
     margin-bottom: 52px;
   }
-  .yororder-form-social {
+  .yourorder-form-social {
     display: flex;
   }
   .yourorder-form,
-  .yororder-img-social {
-    flex: 1; /* Контейнери займуть однаковий простір */
+  .yourorder-img-social {
+    flex: 1;
   }
   .yourorder-form {
     margin-right: 32px;
     padding: 48px 52px;
   }
+
   .yourorder-img {
     margin-bottom: 80px;
   }
