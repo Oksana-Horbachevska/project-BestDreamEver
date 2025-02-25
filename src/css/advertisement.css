@@ -1,9 +1,8 @@
 .advertisement {
-  background: #fbfbfb;
-  margin-top: 14px;
   padding: 80px 20px;
+  margin-top: 14px;
+  background: #fbfbfb;
 }
-
 .text {
   font-weight: 600;
   font-size: 48px;
@@ -15,22 +14,21 @@
   padding-right: 4px;
 }
 .box {
-  background-color: #576f35;
   position: absolute;
+  background-color: #576f35;
   border-radius: 12px;
   width: 335px;
   height: 103px;
 }
+
 .text-discount {
   color: #fbfbfb;
   position: relative;
 }
 @media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
+  .advertisement {
     padding: 100px 32px;
   }
-
   .text {
     padding-left: 0px;
     padding-right: 0px;
@@ -48,8 +46,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
+  .advertisement {
     padding: 100px 100px;
   }
   .text {
