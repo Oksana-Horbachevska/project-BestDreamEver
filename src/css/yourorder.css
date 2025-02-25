@@ -56,19 +56,45 @@
   margin-bottom: 16px;
 }
 
-.form-input:valid,
-.form-textarea:valid {
-  border: 1px solid #3cbc81;
+.form-input::placeholder {
+  color: #141414;
 }
 
-.form-input:invalid,
-.form-textarea:invalid {
-  border: 1px solid red;
+.form-input:focus,
+.form-input:textarea {
+  border-color: #7a3145;
 }
 
-.form-input:hover,
-.form-textarea:hover {
-  border: 1px solid #7a3145;
+.form-input:not(:placeholder-shown):invalid {
+  border-color: #e74a3b;
+}
+
+.form-input:not(:placeholder-shown):valid {
+  border-color: #3cbc81;
+}
+
+.text-valid,
+.text-invalid {
+  font-size: 14px;
+  padding-left: 20px;
+  margin-top: 4px;
+  display: none;
+}
+
+.text-valid {
+  color: green;
+}
+
+.text-invalid {
+  color: red;
+}
+
+.inp:not(:placeholder-shown):valid ~ .text-valid {
+  display: block;
+}
+
+.inp:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
 }
 
 .form-textarea {
@@ -97,6 +123,13 @@
   letter-spacing: -1.5%;
   color: #fbfbfb;
 }
+
+/* .yourorder-button:hover,
+.yourorder-button:focus {
+  color: #7a3145;
+  background-color: #d4bfc4;
+} */
+
 .yourorder-img-social {
   border-radius: 30px;
   padding: 40px 20px;
@@ -133,6 +166,9 @@
   .yourorder-form-title {
     max-width: 440px;
   }
+  .yourorder-form-social {
+    margin: 0 32px;
+  }
   .yourorder-form {
     padding: 100px 72px;
     margin-bottom: 32px;
@@ -162,15 +198,19 @@
   .yourorder-text {
     margin-bottom: 52px;
   }
+
   .yourorder-form-social {
     display: flex;
+    margin: 0;
   }
+
   .yourorder-form,
   .yourorder-img-social {
     flex: 1;
   }
   .yourorder-form {
     margin-right: 32px;
+    margin-bottom: 0;
     padding: 48px 52px;
   }
 
