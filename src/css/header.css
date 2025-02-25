@@ -11,7 +11,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 335px;
 }
 
 .nav-list,
@@ -52,7 +51,7 @@
 
 @media screen and (min-width: 768px) {
   .header-container {
-    max-width: 704px;
+    max-width: 768px;
   }
 
   .header-logo-icon {
@@ -101,7 +100,6 @@
   }
 
   .nav-link {
-    font-size: 16px;
     line-height: 1.25;
     text-align: center;
     color: #fbfbfb;
@@ -130,7 +128,6 @@
   .header-shop-btn {
     display: block;
     padding: 16px 32px;
-    font-weight: 500;
     font-size: 18px;
     line-height: 1.1;
     letter-spacing: -0.01em;
