@@ -56,6 +56,21 @@
   color: #141414;
   margin-bottom: 16px;
 }
+.form-input:valid,
+.form-textarea:valid {
+  border: 1px solid #3cbc81; /* зелена рамка при валідних даних */
+}
+
+.form-input:invalid,
+.form-textarea:invalid {
+  border: 1px solid red; /* червона рамка при невалідних даних */
+}
+
+.form-input:hover,
+.form-textarea:hover {
+  border: 1px solid #7a3145; /* рамка при наведенні курсору */
+}
+
 .form-textarea {
   width: 100%;
   height: 92px;
@@ -91,8 +106,8 @@
 .yororder-img {
   border-radius: 15px;
   margin-bottom: 20px;
-  max-width: 295px;
 }
+
 .yourorder-social {
   color: #d4bfc4;
   font-family: Inter Tight;
@@ -102,11 +117,11 @@
   letter-spacing: 0%;
   margin-bottom: 16px;
 }
+
 .social-links {
   display: inline;
   text-transform: uppercase;
   text-align: end;
-  margin-bottom: 52px;
 }
 .social-links a {
   text-decoration: none;
@@ -123,6 +138,9 @@
   }
   .yororder-text {
     margin-bottom: 52px;
+  }
+  .yororder-form-title {
+    max-width: 440px;
   }
   .yourorder-form {
     padding: 100px 72px;
@@ -154,7 +172,10 @@
   }
   .yororder-form-social {
     display: flex;
-    width: calc((100% - 32px) / 2);
+  }
+  .yourorder-form,
+  .yororder-img-social {
+    flex: 1; /* Контейнери займуть однаковий простір */
   }
   .yourorder-form {
     margin-right: 32px;
