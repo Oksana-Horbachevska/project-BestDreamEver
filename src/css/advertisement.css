@@ -25,6 +25,7 @@
   color: #fbfbfb;
   position: relative;
 }
+
 @media only screen and (min-width: 768px) {
   .advertisement {
     padding: 100px 32px;

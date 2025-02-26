@@ -175,13 +175,24 @@
   position: relative;
 }
 
-.links-item::before {
+/* .links-item::after {
+  content: '/';
+  display: block;
+  position: absolute;
+  
+} */
+
+.social::after {
   content: '/';
   display: block;
   position: absolute;
   top: -1px;
   left: -9px;
 }
+/* 
+.links-item:last-child::after {
+  content: '';
+} */
 
 @media only screen and (min-width: 768px) {
   .page-yourorder {
