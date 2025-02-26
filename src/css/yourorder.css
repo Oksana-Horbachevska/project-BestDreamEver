@@ -156,7 +156,8 @@
 .yourorder-soc-list {
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 .social-links {
   /* display: inline; */
@@ -174,10 +175,12 @@
   position: relative;
 }
 
-.links-item::after {
+.links-item::before {
   content: '/';
   display: block;
   position: absolute;
+  top: -1px;
+  left: -9px;
 }
 
 @media only screen and (min-width: 768px) {
