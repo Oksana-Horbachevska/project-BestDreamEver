@@ -175,7 +175,7 @@
   position: relative;
 }
 
-.links-item::before {
+.social::before {
   content: '/';
   display: block;
   position: absolute;
