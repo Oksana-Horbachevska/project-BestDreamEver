@@ -3,7 +3,7 @@
 }
 
 .container-how {
-display: flex;
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -13,9 +13,9 @@ display: flex;
 
 .girl_cut {
     border-radius: 30px;
-    max-width: 335px;
+    max-width: 320px;
     max-height: 452px;
-    
+
 }
 
 .order-list {
@@ -25,7 +25,7 @@ display: flex;
 }
 
 .text-section {
-display: flex;
+    display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
@@ -33,12 +33,12 @@ display: flex;
 }
 
 .how-text-wrapper {
-max-height: 676px;
-margin-bottom: 40px;
+    max-height: 676px;
+    margin-bottom: 40px;
 }
 
 .title-how {
-font-weight: 600;
+    font-weight: 600;
     font-size: 28px;
     line-height: 1;
     letter-spacing: -0.01em;
@@ -53,71 +53,82 @@ font-weight: 600;
 
 .text-how {
     max-width: 335px;
-        max-height: 60px;
-font-weight: 500;
+    max-height: 60px;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.25;
     color: #fbfbfb;
 }
 
-   .order-item {
-       list-style: none;
-       counter-reset: list-counter;
-       padding: 0;
-       margin: 0;
-   }
+.order-item {
+    list-style: none;
+    counter-reset: list-counter;
+    padding: 0;
+    margin: 0;
+}
 
-   .order-list {
-       counter-increment: list-counter;
-       display: flex;
-       align-items: center;
-    background-color: #fbfbfb;
-       padding: 12px 27px 12px 24px;
-       border-radius: 15px;
-    font-weight: 500;
-        font-size: 14px;
-        line-height: 1.25;
-        color: #858585;
-        max-height: 284px;
-        max-width: 335px;
-   }
-
-   .order-list:not(:last-child) {
-    margin-bottom: 20px;
-   }
-
-   .order-list::before {
-       content: counter(list-counter);
-       font-size: 18px;
-       font-weight: 600;
-       line-height: 40px;
-       text-align: center;
-       background-color: #7a3145;
-       color: #fbfbfb; 
-       border-radius: 100%;
-       margin-right: 24px;
+.order-list {
+    counter-increment: list-counter;
     display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 5px solid #d4bfc4; 
-        flex: 0 0 50px;
-   }
+    align-items: center;
+    background-color: #fbfbfb;
+    padding: 12px 27px 12px 24px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #858585;
+    max-height: 284px;
+    max-width: 335px;
+}
 
-   .order-text {
-display: inline-block;
-        word-wrap: break-word;
-      
-   }
+.order-list:not(:last-child) {
+    margin-bottom: 20px;
+}
 
-   .another {
-       font-weight: 700;
-       color: #141414;
-   }
+.order-list::before {
+    content: counter(list-counter);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    background-color: #7a3145;
+    color: #fbfbfb;
+    border-radius: 100%;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #d4bfc4;
+    flex: 0 0 50px;
+}
+
+.order-text {
+    display: inline-block;
+    word-wrap: break-word;
+
+}
+
+.another {
+    font-weight: 700;
+    color: #141414;
+}
 
 @media screen and (min-width: 768px) {
-.container-how {
-        gap: 200px;
+    .how-text-wrapper {
+            max-width: 440px;
+            margin-bottom: 52px;
+        }
+
+    .how {
+            background-image: linear-gradient(to bottom, #7a3145 0% 53%, #576f35 53% 100%);
+        }
+
+    .container-how {
+        gap: 0px;
     }
+
+    
 
     .girl_cut {
         max-width: 640px;
@@ -125,96 +136,76 @@ display: inline-block;
     }
 
     .photo-section {
-padding: 100px 164px;
-} 
-
-.text-section {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-padding: 0px 164px;
-}
+        padding: 100px 64px;
+    }
     
-.order-list:not(:last-child) {
-    margin-bottom: 24px;
-}
+         .text-section {
+             padding-top: 100px;
+             padding-bottom: 100px;
+             padding-left: 164px;
+         }
 
-        .title-how {
-            max-width:440px;
-            max-height: 96px;
-            font-weight: 600;
-            font-size: 32px;
-            line-height: 1;
-            letter-spacing: -0.01em;
-            text-transform: uppercase;
-            color: #fbfbfb;
-            margin-bottom: 24px;
-                margin-top: 0;
-        }
-
-                .text-how {
-                    max-width: 440px;
-                    max-height: 60px;
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 1.25;
-                    color: #fbfbfb;
-                    margin-bottom: 52px;
-                }
-
-                                .order-list {
-                                    counter-increment: list-counter;
-                                    display: flex;
-                                    align-items: center;
-                                    margin-bottom: 24px;
-                                    background-color: #fbfbfb;
-                                    padding: 18px 15px 18px 24px;
-                                    border-radius: 15px;
-                                    font-weight: 500;
-                                    font-size: 16px;
-                                    line-height: 1.25;
-                                    color: #858585;
-                                    max-width: 440px;
-                                    max-height: 76px;
-                                }
+    .order-list:not(:last-child) {
+        margin-bottom: 24px;
     }
 
-@media screen and (min-width: 1280px) {
-.how {
-        background-image: linear-gradient(to right, #7a3145 0% 50%, #576f35 50% 100%);
-        padding: 100px;
+    .title-how {
+        font-size: 32px;
+        margin-bottom: 24px;
+        margin-top: 0;
     }
 
-    .girl_cut {
-    max-width: 440px;
-    max-height: 560px;
+    .text-how {
+        max-width: 440px;
+        max-height: 60px;
+        font-size: 16px;
         
     }
 
-                .photo-section {
-                    padding: 40px 0;
-                }
-
-           .text-how {
-               max-width: 440px;
-               max-height: 60px;
-               font-weight: 500;
-               font-size: 16px;
-               line-height: 1.25;
-               color: #fbfbfb;
-              padding-bottom: 104px;
-           }
-
-.text-section {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    padding-top: 45px;
-    padding-left: 0;
-    padding-bottom: 0;
-    padding-right: 0;
+    .order-list {
+        counter-increment: list-counter;
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        background-color: #fbfbfb;
+        padding: 18px 15px 18px 24px;
+        border-radius: 15px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+        color: #858585;
+        max-width: 440px;
+        max-height: 76px;
+    }
 }
-           
+
+@media screen and (min-width: 1280px) {
+    .how {
+        background-image: linear-gradient(to right, #7a3145 0% 50%, #576f35 50% 100%);
+    
+    }
+
+         .container-how {
+             gap: 200px;
+         }
+
+    .girl_cut {
+        max-width: 440px;
+        max-height: 560px;
+
+    }
+
+    .photo-section {
+        padding: 100px 0;
+    }
+
+    .text-how {
+        padding-bottom: 104px;
+    }
+
+    .text-section {
+    
+        padding: 100px 0;
+    }
+
 }
