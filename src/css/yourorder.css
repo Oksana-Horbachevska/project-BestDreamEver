@@ -8,9 +8,10 @@
 }
 .yourorder-title {
   font-weight: 600;
-  font-size: 64px;
-  line-height: 64px;
-  letter-spacing: -1.5%;
+  font-size: 48px;
+  line-height: 1.08333;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
   color: #fbfbfb;
   margin-bottom: 24px;
 }
@@ -34,11 +35,12 @@
 
 .yourorder-form-title {
   font-weight: 600;
-  font-size: 32px;
-  line-height: 32px;
-  letter-spacing: -1.5%;
-  padding-bottom: 52px;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
+  color: #141414;
+  margin-bottom: 40px;
 }
 .form-label {
   display: block;
@@ -62,8 +64,9 @@
 }
 
 .form-input:focus,
-.form-input:textarea {
-  border-color: #7a3145;
+.form-textarea:focus {
+  outline: none;
+  border: 1px solid #7a3145;
 }
 
 .form-input:not(:placeholder-shown):invalid {
@@ -125,11 +128,11 @@
   color: #fbfbfb;
 }
 
-/* .yourorder-button:hover,
+.yourorder-button:hover,
 .yourorder-button:focus {
   color: #7a3145;
   background-color: #d4bfc4;
-} */
+}
 
 .yourorder-img-social {
   border-radius: 30px;
@@ -143,29 +146,60 @@
 }
 
 .yourorder-social {
-  color: #d4bfc4;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0%;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #d4bfc4;
   margin-bottom: 16px;
 }
 
+.yourorder-soc-list {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
 .social-links {
-  display: inline;
+  /* display: inline; */
   text-transform: uppercase;
-  text-align: end;
+  /* text-align: end; */
+}
+
+.links-item {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11111;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  position: relative;
+}
+
+.links-item::after {
+  content: '/';
+  display: block;
+  position: absolute;
 }
 
 @media only screen and (min-width: 768px) {
   .page-yourorder {
     padding: 100px 0;
   }
+
+  .yourorder-title {
+    font-size: 64px;
+    line-height: 1;
+  }
   .yourorder-text {
     margin-bottom: 52px;
   }
+
+  .yourorder-p {
+    line-height: 1.25;
+  }
   .yourorder-form-title {
     max-width: 440px;
+    font-size: 32px;
+    margin-bottom: 52px;
   }
   .yourorder-form-social {
     margin: 0 32px;
@@ -183,7 +217,10 @@
     padding: 16px 15px;
     margin-bottom: 24px;
   }
-
+  .yourorder-social {
+    font-size: 16px;
+    line-height: 1.25;
+  }
   .yourorder-img-social {
     padding: 52px;
   }

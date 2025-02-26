@@ -14,11 +14,11 @@
 
 <div class="yourorder-form-social">
   <div class="yourorder-form">
-    <h3 class="yourorder-form-title">
+    <p class="yourorder-form-title">
       Ordering <span style="color: #7a3145">from us</span> is quick and easy!
       Fill out <span style="color: #576f35">the form</span> below and we will
       contact you !
-    </h3>
+    </p>
     <form class="form">
       <label class="form-label" for="fullname" >
         <input
@@ -37,7 +37,7 @@
           id="email"
           name="email"
           placeholder="Email"
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})"
           required
         />
         <p class="text-valid">Succes!</p>
@@ -60,11 +60,11 @@
     <div class="yourorder-img-social">
 
       <picture> 
-        <source media="(min-width: 1280px)" srcset="../img/yourorder/yourorder-desktop.jpg 1x , /img/yourorder/yororder-desktop@2x.jpg" />
-        <source media="(min-width: 768px)" srcset="../img/yourorder/yourorder-tablet.jpg 1x , /img/yourorder/yororder-tablet@2x.jpg" />        
-        <source media="(max-width: 767px)" srcset="../img/yourorder/yourorder-mobile.jpg 1x , /img/yourorder/yororder-mobile@2x.jpg">
+        <source media="(min-width: 1280px)" srcset="/img/yourorder/yourorder-desktop.jpg 1x , /img/yourorder/yororder-desktop@2x.jpg" />
+        <source media="(min-width: 768px)" srcset="/img/yourorder/yourorder-tablet.jpg 1x , /img/yourorder/yororder-tablet@2x.jpg" />        
+        <source media="(max-width: 767px)" srcset="/img/yourorder/yourorder-mobile.jpg 1x , /img/yourorder/yororder-mobile@2x.jpg">
         <img      
-      src="../img/yourorder/yourorder-desktop.jpg"
+      src="/img/yourorder/yourorder-desktop.jpg"
         alt="дівчинат робить смузі"
         class="yourorder-img"
         width="640"
@@ -72,17 +72,17 @@
     </picture>
 
       <p class="yourorder-social">Follow us on our social networks:</p>
-      <ul>
+      <ul class="yourorder-soc-list">
         <li class="social-links">
-          <a href="https://www.instagram.com/goitclub/" target="_blank"></a>
-            instagram</a>  / 
+          <a class="links-item" href="https://www.instagram.com/goitclub/" target="_blank"></a>
+            instagram</a>
         </li>
         <li class="social-links">
-          <a href="https://www.facebook.com/goITclub/" target="_blank">
-            facebook</a> /
+          <a class="links-item" href="https://www.facebook.com/goITclub/" target="_blank">
+            facebook</a>
         </li>
         <li class="social-links">
-          <a href="https://www.youtube.com/c/GoIT/" target="_blank">
+          <a class="links-item" href="https://www.youtube.com/c/GoIT/" target="_blank">
             youtube
           </a>
         </li>
