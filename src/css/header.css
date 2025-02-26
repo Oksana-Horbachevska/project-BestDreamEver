@@ -104,18 +104,17 @@
     text-align: center;
     color: #fbfbfb;
     border-radius: 12px;
-    border: solid #fbfbfb;
+    border: 1px solid #fbfbfb;
     padding: 12px;
     background-color: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .nav-link:hover,
   .nav-link:focus {
     background-color: #d4bfc4;
     color: #7a3145;
-    outline: none;
     border: 1px solid #d4bfc4;
   }
 
