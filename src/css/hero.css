@@ -1,10 +1,10 @@
+
 @media screen and (min-width: 1280px) {
   .page-hero {
     height: 796px;
     display: flex;
   }
 }
-
 .hero-container {
   background-color: #576f35;
   height: 100%;
@@ -60,6 +60,11 @@
   color: #fbfbfb;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 374px)  {
+  .hero-title {
+    font-weight: 500;
+    font-size: 40px;
+  }}
 @media screen and (min-width: 768px) {
   .hero-title {
     width: 704px;
