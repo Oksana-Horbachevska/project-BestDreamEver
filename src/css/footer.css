@@ -25,6 +25,9 @@
   font-size: 14px;
   max-width: 335px;
 }
+.footer-menu-adress {
+  margin-top: 40px;
+}
 
 .footer-menu-list {
   color: #fbfbfb;
@@ -32,7 +35,17 @@
   font-weight: 600;
   font-size: 32px;
   letter-spacing: -0.01em;
-  margin-top: 40px; /**/
+  /*margin-top: 40px; /**/
+}
+.footer-link {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease; /* Анімація для плавного переходу */
+}
+.footer-link-link:focus,
+.footer-link-link:hover {
+  text-decoration: underline; /* Підкреслення тексту при натисканні або наведенні */
+  text-decoration-color: green;
 }
 .footer-menu-list-item {
   color: #fbfbfb;
@@ -47,11 +60,13 @@
 }
 
 .footer-adress {
-  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 .footer-tel {
   color: #fbfbfb;
-  margin-bottom: 14px;
+  /*margin-bottom: 14px;*/
   font-weight: 700;
   font-size: 14px;
 }
@@ -60,8 +75,11 @@
   width: 179px;
   color: #fbfbfb;
 }
-.footer-div-policy {
+.footer-policy-harvest {
   margin-top: 80px;
+}
+.footer-div-policy {
+  /*margin-top: 80px;*/
   display: flex;
   column-gap: 8px;
 }
@@ -75,6 +93,9 @@
   margin-top: 16px;
   font-weight: 500;
   font-size: 14px;
+  color: #d4bfc4;
+}
+.footer-slash {
   color: #d4bfc4;
 }
 /*----------------------------------*/
@@ -114,6 +135,9 @@
     width: 265px;
     font-size: 16px;
   }
+  .footer-menu-adress {
+    margin-top: 0px;
+  }
 
   /*tablet*/
   .footer-menu-list {
@@ -129,10 +153,11 @@
     display: flex;
     flex-direction: column;
     /*align-items: flex-end;*/
-    margin-top: 0;
+    margin-top: 64px;
   }
   .footer-adress {
-    margin-top: 64px;
+    /*margin-top: 64px;*/
+    gap: 24px;
   }
   .footer-tel {
     font-size: 16px;
@@ -140,6 +165,7 @@
   .footer-tel-adress {
     font-weight: 700;
     font-size: 16px;
+    margin-top: 0;
   }
   .footer-div-policy {
     width: 229px;
@@ -152,7 +178,6 @@
   }
 
   .footer-tel-adress {
-    margin-top: 24px;
   }
   .footer-policy-harvest {
     display: flex;
@@ -188,12 +213,16 @@
   .footer-menu-adress {
     display: flex;
     flex-direction: row;
+
     align-self: flex-start;
 
     gap: 122px;
   }
   .footer-adress {
     margin-top: 0;
+  }
+  .footer-div-adress {
+    margin-top: 0px;
   }
   .footer-policy-harvest {
     margin-top: 120px;
