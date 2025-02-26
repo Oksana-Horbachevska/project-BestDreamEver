@@ -29,14 +29,14 @@
 }
 
 .hero-container-info {
-  width: 375px;
+  max-width: 375px;
   margin: auto;
   padding: 0 20px;
   height: 100%;
 }
 @media screen and (min-width: 768px) {
   .hero-container-info {
-    width: 704px;
+    max-width: 704px;
     padding: 0;
   }
 }
@@ -52,8 +52,6 @@
 }
 
 .hero-title {
-  width: 335px;
-  height: 208px;
   font-weight: 600;
   font-size: 52px;
   line-height: 1;
@@ -79,7 +77,6 @@
   }
 }
 .hero-text {
-  width: 335px;
   height: 100px;
   font-weight: 500;
   font-size: 14px;
