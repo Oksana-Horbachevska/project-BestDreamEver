@@ -1,5 +1,6 @@
 .advertisement {
   background: #fbfbfb;
+  padding: 80px 0;
 }
 .text {
   font-weight: 600;
@@ -23,6 +24,10 @@
   color: #fbfbfb;
 }
 @media only screen and (min-width: 768px) {
+  .advertisement {
+    padding: 100px 0;
+  }
+
   .text {
     padding-left: 0px;
     padding-right: 0px;
