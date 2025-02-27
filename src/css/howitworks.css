@@ -13,8 +13,9 @@
 
 .girl_cut {
     border-radius: 30px;
-    max-width: 320px;
-    max-height: 452px;
+width: 100%;
+    max-width: 100%;
+    height: auto;
 
 }
 
@@ -136,13 +137,14 @@
     }
 
     .photo-section {
-        padding: 100px 64px;
+        padding: 100px 32px;
     }
     
          .text-section {
              padding-top: 100px;
              padding-bottom: 100px;
-             padding-left: 164px;
+             padding-left: 132px;
+             padding-right: 132px;;
          }
 
     .order-list:not(:last-child) {
