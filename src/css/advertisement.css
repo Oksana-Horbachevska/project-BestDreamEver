@@ -27,7 +27,7 @@
 }
 @media only screen and (min-width: 768px) {
   .advertisement {
-    padding: 100px 32px;
+    padding: 100px 0px;
   }
   .text {
     padding-left: 0px;
@@ -47,7 +47,7 @@
 
 @media only screen and (min-width: 1280px) {
   .advertisement {
-    padding: 100px 100px;
+    padding: 100px 0px;
   }
   .text {
     font-size: 76px;
