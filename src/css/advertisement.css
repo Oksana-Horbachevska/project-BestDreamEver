@@ -9,8 +9,6 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #141414;
-  margin-left: 4px;
-  margin-right: 4px;
 }
 .box {
   background-color: #576f35;
@@ -29,13 +27,9 @@
   }
 
   .text {
-    padding-left: 0px;
-    padding-right: 0px;
     font-size: 64px;
     line-height: 1;
     letter-spacing: -0.01em;
-    padding-top: 20px;
-    padding-bottom: 12px;
   }
 }
 
@@ -44,9 +38,5 @@
     font-size: 76px;
     line-height: 1;
     letter-spacing: -0.01em;
-    padding-left: 16px;
-    padding-right: 10px;
-    padding-top: 4px;
-    padding-bottom: 0px;
   }
 }
