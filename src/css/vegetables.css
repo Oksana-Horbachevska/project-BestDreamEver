@@ -60,6 +60,12 @@
   margin-bottom: 12px;
 }
 
+@media screen and (max-width: 350px) {
+  .vegetables-title {
+    font-size: 46px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .vegetables {
     padding-top: 100px;
