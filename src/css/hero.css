@@ -60,9 +60,10 @@
   color: #fbfbfb;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 374px) {
   .hero-title {
-    font-size: 48px;
+    font-weight: 500;
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 768px) {
