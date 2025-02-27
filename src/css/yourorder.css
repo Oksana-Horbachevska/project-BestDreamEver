@@ -126,12 +126,24 @@
   line-height: 1.11;
   letter-spacing: -1.5%;
   color: #fbfbfb;
+
+  /*  Set transition values  */
+  transition-property: background-color, color;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
 }
 
 .yourorder-button:hover,
 .yourorder-button:focus {
   color: #7a3145;
   background-color: #d4bfc4;
+}
+
+.yourorder-button:active {
+  color: #7a3145;
+  border: 1px solid #7a3145;
+  background-color: #fbfbfb;
 }
 
 .yourorder-img-social {
