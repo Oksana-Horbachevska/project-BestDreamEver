@@ -69,10 +69,12 @@
   /*margin-bottom: 14px;*/
   font-weight: 700;
   font-size: 14px;
+  font-style: normal;
 }
 .footer-tel-adress {
   width: 179px;
   color: #fbfbfb;
+  font-style: normal;
 }
 .footer-policy-harvest {
   margin-top: 80px;
