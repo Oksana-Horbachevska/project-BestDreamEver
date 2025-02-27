@@ -19,7 +19,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  letter-spacing: 0%;
+
   color: #fbfbfb;
 }
 .yourorder-text {
@@ -124,14 +124,18 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 1.11;
-  letter-spacing: -1.5%;
+  letter-spacing: -0.01em;
   color: #fbfbfb;
 
   /*  Set transition values  */
-  transition-property: background-color, color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition-property: background-color, color;
   transition-duration: 500ms;
   transition-timing-function: linear;
   transition-delay: 0;
+ */
 }
 
 .yourorder-button:hover,
