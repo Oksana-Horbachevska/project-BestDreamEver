@@ -1,94 +1,125 @@
-<section class="page-yourorder" >
+<section class="page-yourorder">
   <div class="container yourorder-container">
-<div class="yourorder-text">
-    <h2 class="yourorder-title">
-      FRESH <span style="color: #d4bfc4">HARVEST</span> BOX HAS GOT YOU COVERED
-    </h2>
+    <div class="yourorder-text">
+      <h2 class="yourorder-title">
+        FRESH <span style="color: #d4bfc4">HARVEST</span> BOX HAS GOT YOU
+        COVERED
+      </h2>
 
-    <p class="yourorder-p">
-      Our boxes are packed with delicious, nutritious vegetables, perfect for
-      anyone looking to eat healthier or support local farmers. Order your box
-      today and start enjoying the best that nature has to offer!
-    </p>
-  </div>
+      <p class="yourorder-p">
+        Our boxes are packed with delicious, nutritious vegetables, perfect for
+        anyone looking to eat healthier or support local farmers. Order your box
+        today and start enjoying the best that nature has to offer!
+      </p>
+    </div>
 
-<div class="yourorder-form-social">
-  <div class="yourorder-form">
-    <p class="yourorder-form-title">
-      Ordering <span style="color: #7a3145">from us</span> is quick and easy!
-      Fill out <span style="color: #576f35">the form</span> below and we will
-      contact you !
-    </p>
-    <form class="form">
-      <label class="form-label" for="fullname" >
-        <input
-          class="form-input"
-          type="text"
-          id="fullname"
-          name="fullname"
-          placeholder="Full Name"
-          required
-        />
-      </label>
-      <label class="form-label" for="email">
-        <input
-          class="form-input"
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Email"
-          pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})"
-          required
-        />
-        <p class="text-valid">Succes!</p>
-        <p class="text-invalid">Invalid email, try again</p>
-      </label>
-      <label class="form-label" for="comment">
-        <textarea
-          class="form-textarea"
-          name="comment"
-          placeholder="Comment"
-          rows="5"
-          required
-        ></textarea>
-      </label>
-      <button class="yourorder-button" type="submit">SEND</button>
-      
-    </form>
-  </div>
+    <div class="yourorder-form-social">
+      <div class="yourorder-form">
+        <p class="yourorder-form-title">
+          Ordering <span style="color: #7a3145">from us</span> is quick and
+          easy! Fill out <span style="color: #576f35">the form</span> below and
+          we will contact you !
+        </p>
+        <form class="form">
+          <label class="form-label" for="fullname">
+            <input
+              class="form-input"
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Full Name"
+              required
+            />
+          </label>
+          <label class="form-label" for="email">
+            <input
+              class="form-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})"
+              required
+            />
+            <p class="text-valid">Succes!</p>
+            <p class="text-invalid">Invalid email, try again</p>
+          </label>
+          <label class="form-label" for="comment">
+            <textarea
+              id="comment"
+              class="form-textarea"
+              name="comment"
+              placeholder="Comment"
+              rows="5"
+              required
+            ></textarea>
+          </label>
+          <button class="yourorder-button" type="submit">SEND</button>
+        </form>
+      </div>
 
-    <div class="yourorder-img-social">
+      <div class="yourorder-img-social">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              /img/yourorder/yourorder-desktop.jpg   1x,
+              /img/yourorder/yororder-desktop@2x.jpg
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              /img/yourorder/yourorder-tablet.jpg   1x,
+              /img/yourorder/yororder-tablet@2x.jpg
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              /img/yourorder/yourorder-mobile.jpg   1x,
+              /img/yourorder/yororder-mobile@2x.jpg
+            "
+          />
+          <img
+            src="/img/yourorder/yourorder-desktop.jpg"
+            alt="дівчинат робить смузі"
+            class="yourorder-img"
+            width="640"
+          />
+        </picture>
 
-      <picture> 
-        <source media="(min-width: 1280px)" srcset="/img/yourorder/yourorder-desktop.jpg 1x , /img/yourorder/yororder-desktop@2x.jpg" />
-        <source media="(min-width: 768px)" srcset="/img/yourorder/yourorder-tablet.jpg 1x , /img/yourorder/yororder-tablet@2x.jpg" />        
-        <source media="(max-width: 767px)" srcset="/img/yourorder/yourorder-mobile.jpg 1x , /img/yourorder/yororder-mobile@2x.jpg">
-        <img      
-      src="/img/yourorder/yourorder-desktop.jpg"
-        alt="дівчинат робить смузі"
-        class="yourorder-img"
-        width="640"
-      />
-    </picture>
-
-      <p class="yourorder-social">Follow us on our social networks:</p>
-      <ul class="yourorder-soc-list">
-        <li class="social-links">
-          <a class="links-item" href="https://www.instagram.com/goitclub/" target="_blank">
-            instagram</a>
-        </li>
-        <li class="social-links">
-          <a class="links-item social" href="https://www.facebook.com/goITclub/" target="_blank">
-            facebook</a>
-        </li>
-        <li class="social-links">
-          <a class="links-item social" href="https://www.youtube.com/c/GoIT/" target="_blank">
-            youtube
-          </a>
-        </li>
-      </ul>
+        <p class="yourorder-social">Follow us on our social networks:</p>
+        <ul class="yourorder-soc-list">
+          <li class="social-links">
+            <a
+              class="links-item"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+            >
+              instagram</a
+            >
+          </li>
+          <li class="social-links">
+            <a
+              class="links-item social"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+            >
+              facebook</a
+            >
+          </li>
+          <li class="social-links">
+            <a
+              class="links-item social"
+              href="https://www.youtube.com/c/GoIT/"
+              target="_blank"
+            >
+              youtube
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
-  </div>
-</div>
 </section>
