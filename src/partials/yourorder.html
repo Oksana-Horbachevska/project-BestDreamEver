@@ -28,6 +28,8 @@
               id="fullname"
               name="fullname"
               placeholder="Full Name"
+              pattern="[A-Za-zÀ-ž\s]+"
+              title="Enter only letters and spaces"
               required
             />
           </label>
@@ -38,12 +40,30 @@
               id="email"
               name="email"
               placeholder="Email"
-              pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,8}"
               required
             />
-            <p class="text-valid">Succes!</p>
-            <p class="text-invalid">Invalid email, try again</p>
           </label>
+          <p class="text-valid">Succes!</p>
+          <p class="text-invalid">Invalid email, try again</p>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              const emailInput = document.getElementById('email');
+              const errorText = document.querySelector('.text-invalid');
+              const successText = document.querySelector('.text-valid');
+
+              emailInput.addEventListener('input', function () {
+                if (emailInput.validity.valid) {
+                  errorText.style.display = 'none';
+                  successText.style.display = 'block';
+                } else {
+                  errorText.style.display = 'block';
+                  successText.style.display = 'none';
+                }
+              });
+            });
+          </script>
+
           <label class="form-label" for="comment">
             <textarea
               id="comment"
@@ -51,7 +71,6 @@
               name="comment"
               placeholder="Comment"
               rows="5"
-              required
             ></textarea>
           </label>
           <button class="yourorder-button" type="submit">SEND</button>
